@@ -13,14 +13,8 @@ const CoffeeStack = createStackNavigator(
   },
   {
     initialRouteName: "CoffeeList",
-    defaultNavigationOptions: {
-      headerTintColor: "white",
-      headerStyle: {
-        backgroundColor: "#90d4ed"
-      },
-      headerTitleStyle: {
-        fontWeight: "bold"
-      }
+    cardStyle: {
+      backgroundColor: "rgb(20,90,100)"
     }
   }
 );
