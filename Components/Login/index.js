@@ -56,14 +56,14 @@ class Login extends Component {
           <Button
             full
             success
-            onPress={() => this.props.navigation.replace("CoffeeList")}
+            onPress={() => this.props.navigation.navigate("CoffeeList")}
           >
             <Text>Login</Text>
           </Button>
           <Button
             full
             warning
-            onPress={() => this.props.navigation.replace("CoffeeList")}
+            onPress={() => this.props.navigation.navigate("CoffeeList")}
           >
             <Text>Register</Text>
           </Button>

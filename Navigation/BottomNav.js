@@ -41,10 +41,7 @@ const BottomTab = createBottomTabNavigator(
       showLabel: false,
       activeTintColor: "purple",
       inactiveTintColor: "gray",
-      activeBackgroundColor: "white",
-      style: {
-        backgroundColor: "#ffd1dc"
-      }
+      activeBackgroundColor: "white"
     }
   }
 );
