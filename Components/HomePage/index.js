@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 // NativeBase Components
 import { Container, Header } from "native-base";
-
+import AppContainer from "../../Navigation/index";
 // Style
 import styles from "./styles";
 
@@ -17,7 +17,7 @@ import Login from "../Login";
 // Actions
 import { getCoffeeShops } from "../../store/actions/coffeeActions";
 
-class HomePage extends Component {
+class HomePage extends React.Component {
   componentDidMount() {
     this.props.getCoffeeShops();
   }
@@ -26,7 +26,8 @@ class HomePage extends Component {
       <Container style={styles.transparent}>
         <View style={styles.overlay} />
         <Header style={styles.transparent} />
-        <CoffeeList />
+        {/* <CoffeeList /> */}
+        <AppContainer />
       </Container>
     );
   }
