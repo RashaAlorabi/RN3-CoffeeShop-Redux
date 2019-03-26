@@ -1,33 +1,7 @@
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import BottomNav from "./BottomNav";
 
-import Login from "../Components/Login";
+import { createAppContainer } from "react-navigation";
 
-import CoffeeList from "../Components/CoffeeList";
-import CoffeeDetail from "../Components/CoffeeDetail";
-import CoffeeCart from "../Components/CoffeeCart";
+const AppContainer = createAppContainer(BottomNav);
 
-const RootStack = createStackNavigator(
-  {
-    Login: Login,
-    CoffeeList: CoffeeList,
-    CoffeeDetail: CoffeeDetail,
-    CoffeeCart: CoffeeCart
-  },
-  {
-    initialRouteName: "Login",
-    cardStyle: {
-      backgroundColor: "rgb(20,90,100)"
-    },
-    defaultNavigationOptions: {
-      headerTintColor: "white",
-      headerStyle: {
-        backgroundColor: "rgb(20,90,100)"
-      },
-      headerTextStyle: {
-        fontWeight: "bold"
-      }
-    }
-  }
-);
-const AppContainer = createAppContainer(RootStack);
 export default AppContainer;

@@ -14,7 +14,7 @@ class CoffeeList extends Component {
   static navigationOptions = ({ navigation }) => {
     return {
       title: "Coffee List",
-      headerLeft: null,
+      // headerLeft: null,
       headerRight: (
         <Button onPress={() => navigation.navigate("CoffeeCart")}>
           <Icon name="shoppingcart" type="AntDesign" />
